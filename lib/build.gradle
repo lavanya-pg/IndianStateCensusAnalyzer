@@ -25,4 +25,7 @@ dependencies {
 
     // This dependency is used internally, and not exposed to consumers on their own compile classpath.
     implementation 'com.google.guava:guava:29.0-jre'
+    
+    implementation group: 'com.opencsv', name: 'opencsv', version: '5.5.1'
+    
 }
