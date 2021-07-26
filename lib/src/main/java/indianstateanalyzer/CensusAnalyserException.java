@@ -3,7 +3,7 @@ package indianstateanalyzer;
 public class CensusAnalyserException extends Exception
 {
 
-    enum ExceptionType
+    enum ExceptionType 
     {
         CENSUS_FILE_PROBLEM,
         INVALID_FILE_TYPE_OR_DELIMITER_OR_HEADER
@@ -11,14 +11,14 @@ public class CensusAnalyserException extends Exception
 
     ExceptionType type;
 
-    public CensusAnalyserException(String message, ExceptionType type)
+    public CensusAnalyserException(String message, ExceptionType type) 
     {
         super(message);
         this.type = type;
     }
 
 
-    public CensusAnalyserException(String message, ExceptionType type, Throwable cause) 
+    public CensusAnalyserException(String message, ExceptionType type, Throwable cause)
     {
         super(message, cause);
         this.type = type;
